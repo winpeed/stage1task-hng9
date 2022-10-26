@@ -34,19 +34,20 @@
   margin-top: -1em;
   width: 100%;
   position: relative;
-}
-.btn__links a {
-  display: block;
-  text-decoration: none;
-  background-color: var(--bg--gray);
-  color: var(--text--gray);
-  padding: 1.5em 2.3em;
-  margin: 1em 1em;
-  text-align: center;
-  border-radius: 8px;
-  font-weight: 500;
-  font-size: 1rem;
-  position: relative;
+
+  a {
+    display: block;
+    text-decoration: none;
+    background-color: var(--bg--gray);
+    color: var(--text--gray);
+    padding: 1.5em 2.3em;
+    margin: 1em 1em;
+    text-align: center;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 1rem;
+    position: relative;
+  }
 }
 
 footer {
@@ -58,11 +59,12 @@ footer {
   padding: 4em 1em;
   margin: 6em 0em;
   border-top: 1px solid var(--bg--gray);
-}
-footer .footer__text {
-  font-size: 1rem;
-  margin: 1em 0em;
-  color: var(--text--gray);
+
+  .footer__text {
+    font-size: 1rem;
+    margin: 1em 0em;
+    color: var(--text--gray);
+  }
 }
 
 .zuri__icon {
@@ -77,10 +79,10 @@ footer .footer__text {
 
 .social__links {
   padding: 4em 0em;
-}
-.social__links a {
-  padding: 0em 1em;
-  display: inline;
+  a {
+    padding: 0em 1em;
+    display: inline;
+  }
 }
 
 @media (max-width: 500px) {
@@ -89,31 +91,40 @@ footer .footer__text {
     font-size: 1.5rem;
     color: var(--text--gray);
   }
+
   .share__button__two {
     display: none;
   }
 }
+
 @media (min-width: 501px) {
   .share__button {
     display: none;
   }
+
   .App {
     max-width: 1200px;
     margin: 0 auto;
   }
 }
+
 @media (min-width: 701px) {
   .App {
     margin: 0 auto;
     padding: 2em 0em;
   }
-  .btn__links a {
-    margin: 1em 0em;
+
+  .btn__links {
+    a {
+      margin: 1em 0em;
+    }
   }
+
   footer {
     flex-direction: row;
+
+    .footer__text {
+      margin: 0em;
+    }
   }
-  footer .footer__text {
-    margin: 0em;
-  }
-}/*# sourceMappingURL=App.css.map */
+}
