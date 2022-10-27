@@ -20,7 +20,7 @@
   align-items: center;
   justify-content: center;
   width: 94vw;
-  padding: 2em 0em;
+  padding: 2em 0em 0em 0em;
   margin: 0 auto;
 }
 
@@ -66,7 +66,7 @@ footer {
   align-items: flex-start;
   width: 93%;
   padding: 4em 1em;
-  margin: 6em 0em;
+  margin: 6em 0em 0em 0em;
   border-top: 1px solid var(--bg--gray);
 
   .footer__text {
