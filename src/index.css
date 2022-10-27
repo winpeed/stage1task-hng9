@@ -30,4 +30,7 @@ code {
   --text--gray: #101828;
   --bg--gray: #eaecf0;
   --bg--white: #ffffff;
+  --bg--hover--gray: #d0d5dd;
+  --bg--focused--gray: linear-gradient(0deg, #eaecf0, #eaecf0),
+    linear-gradient(0deg, #98a2b3, #98a2b3);
 }

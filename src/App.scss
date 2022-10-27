@@ -4,7 +4,7 @@
 
 .share__button {
   align-self: flex-end;
-  padding: 0em 4em;
+  padding: 0em 2em;
   cursor: pointer;
 }
 
@@ -47,6 +47,15 @@
     font-weight: 500;
     font-size: 1rem;
     position: relative;
+    border: 1px solid var(--bg--gray);
+  }
+
+  a:hover {
+    background-color: var(--bg--hover--gray);
+  }
+
+  a:focus {
+    background-color: var(--bg--focused--gray);
   }
 }
 
@@ -62,8 +71,9 @@ footer {
 
   .footer__text {
     font-size: 1rem;
-    margin: 1em 0em;
+    margin: 1.5em 0em;
     color: var(--text--gray);
+    text-decoration: none;
   }
 }
 
@@ -85,7 +95,7 @@ footer {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   #twitter {
     font-weight: 800;
     font-size: 1.5rem;
@@ -97,7 +107,7 @@ footer {
   }
 }
 
-@media (min-width: 501px) {
+@media (min-width: 601px) {
   .share__button {
     display: none;
   }
@@ -105,6 +115,10 @@ footer {
   .App {
     max-width: 1200px;
     margin: 0 auto;
+  }
+
+  #twitter {
+    font-size: 1.9rem;
   }
 }
 

@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import "./App.css";
 import { useState } from "react";
 
@@ -28,46 +29,90 @@ function App() {
       <h2 id="slack">{slackName}</h2>
 
       <div className="btn__links">
-        <a href="https://training.zuri.team/" id="btn__zuri">
+        <a
+          href="https://twitter.com/winpeed"
+          id="btn__zuri"
+          target="_blank"
+          rel="noreferrer"
+        >
           Twitter Link
         </a>
-        <a href="https://training.zuri.team/" id="btn__zuri">
+        <a
+          href="https://training.zuri.team/"
+          id="btn__zuri"
+          target="_blank"
+          rel="noreferrer"
+        >
           Zuri Team
         </a>
-        <a href="https://training.zuri.team/" id="books">
+        <a
+          href="http://books.zuri.team/"
+          id="books"
+          target="_blank"
+          rel="noreferrer"
+        >
           Zuri Books
         </a>
-        <a href="https://training.zuri.team/" id="book__python">
+        <a
+          href={`https://books.zuri.team/python-for-beginners?ref_id=${slackName}`}
+          id="book__python"
+          target="_blank"
+          rel="noreferrer"
+        >
           Python Books
         </a>
-        <a href="https://training.zuri.team/" id="pitch">
+        <a
+          href="https://background.zuri.team"
+          id="pitch"
+          target="_blank"
+          rel="noreferrer"
+        >
           Background Check for Coders
         </a>
-        <a href="https://training.zuri.team/" id="book__design">
+        <a
+          href="https://books.zuri.team/design-rules"
+          id="book__design"
+          target="_blank"
+          rel="noreferrer"
+        >
           Design Books
         </a>
       </div>
 
       <div className="social__links">
-        <a href="https://training.zuri.team/" id="btn__zuri">
+        <a href="https://hng9.slack.com/" target="_blank" rel="noreferrer">
           <img src="slack.png" alt="Slack Icon" width={25} height={25} />
         </a>
 
-        <a href="https://training.zuri.team/" id="btn__zuri">
+        <a href="https://github.com/winpeed/" target="_blank" rel="noreferrer">
           <img src="github.svg" alt="Github Icon" />
         </a>
       </div>
       <footer>
-        <span className="zuri__icon">
-          <img src="Vector.svg" alt="Zuri Internship Logo" />
-          <img src="dotVector.svg" alt="Dot Vector" className="dot__icon" />
-        </span>
+        <a
+          href="https://internship.zuri.team/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <span className="zuri__icon">
+            <img src="Vector.svg" alt="Zuri Internship Logo" />
+            <img src="dotVector.svg" alt="Dot Vector" className="dot__icon" />
+          </span>
+        </a>
 
-        <span className="footer__text">HNG Internship 9 Frontend Task</span>
+        <a href="/" className="footer__text">
+          <span>HNG Internship 9 Frontend Task</span>
+        </a>
 
-        <span>
-          <img src="I4G.svg" alt="Ingressive for Good" />
-        </span>
+        <a
+          href="https://ingressive.org/about/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <span>
+            <img src="I4G.svg" alt="Ingressive for Good" />
+          </span>
+        </a>
       </footer>
     </>
   );
