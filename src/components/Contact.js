@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 
 function Contact() {
-  const [name, setName] = useState("");
+  // eslint-disable-next-line no-unused-vars
+  const [name, setName] = useState("Zuribot");
   return (
     <section className="form__wrapper">
       <h1 className="heading">Contact Me</h1>
