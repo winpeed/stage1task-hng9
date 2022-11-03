@@ -31,6 +31,13 @@ code {
   --bg--gray: #eaecf0;
   --bg--white: #ffffff;
   --bg--hover--gray: #d0d5dd;
+  --bg--blue: #1570ef;
   --bg--focused--gray: linear-gradient(0deg, #eaecf0, #eaecf0),
     linear-gradient(0deg, #98a2b3, #98a2b3);
+}
+
+input::placeholder,
+textarea::placeholder,
+button {
+  font-family: "Inter", sans-serif;
 }
