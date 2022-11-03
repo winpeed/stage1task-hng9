@@ -3,6 +3,7 @@ import React, { useState } from "react";
 function Contact() {
   // eslint-disable-next-line no-unused-vars
   const [name, setName] = useState("Zuribot");
+
   return (
     <section className="form__wrapper">
       <h1 className="heading">Contact Me</h1>
@@ -58,7 +59,7 @@ function Contact() {
           <input type="checkbox" name="isAgree" id="isAgree" />
         </div>
 
-        <button id="btn__submit">Send Message</button>
+        <button id="btn__submit"> Send Message</button>
       </form>
     </section>
   );

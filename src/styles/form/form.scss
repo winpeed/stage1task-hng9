@@ -49,6 +49,11 @@
         margin-top: 1em;
       }
 
+      input:focus {
+        outline: none;
+        border: 1px solid #84caff;
+      }
+
       textarea {
         height: 150px;
         border-radius: 8px;
@@ -57,6 +62,11 @@
         outline: none;
         resize: none;
         padding: 1em;
+      }
+
+      textarea:focus {
+        outline: none;
+        border: 1px solid #84caff;
       }
     }
 
@@ -83,6 +93,18 @@
   font-size: 0.89rem;
   cursor: pointer;
   width: 100%;
+}
+
+#btn__submit:hover {
+  background: #175cd3;
+}
+
+#btn__submit:focus {
+  background-color: #1570ef;
+}
+
+#btn__submit:disabled {
+  background-color: #b2ddff;
 }
 
 #box__isAgree {

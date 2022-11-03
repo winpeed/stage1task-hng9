@@ -46,6 +46,10 @@
   border: 1px solid #d0d5dd;
   margin-top: 1em;
 }
+.form__wrapper form div input:focus {
+  outline: none;
+  border: 1px solid #84caff;
+}
 .form__wrapper form div textarea {
   height: 150px;
   border-radius: 8px;
@@ -54,6 +58,10 @@
   outline: none;
   resize: none;
   padding: 1em;
+}
+.form__wrapper form div textarea:focus {
+  outline: none;
+  border: 1px solid #84caff;
 }
 .form__wrapper form div:nth-child(3),
 .form__wrapper form div:nth-child(4),
@@ -77,6 +85,18 @@
   font-size: 0.89rem;
   cursor: pointer;
   width: 100%;
+}
+
+#btn__submit:hover {
+  background: #175cd3;
+}
+
+#btn__submit:focus {
+  background-color: #1570ef;
+}
+
+#btn__submit:disabled {
+  background-color: #b2ddff;
 }
 
 #box__isAgree {

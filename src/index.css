@@ -41,3 +41,21 @@ textarea::placeholder,
 button {
   font-family: "Inter", sans-serif;
 }
+
+input[type="checkbox"] {
+  box-shadow: none;
+}
+
+input[type="checkbox"]:disabled {
+  background-color: #d0d5dd;
+}
+
+input[type="checkbox"]:focus {
+  border: 1px solid #84caff;
+  box-shadow: 0px 0px 0px 4px #d1e9ff;
+}
+
+input[type="checkbox"]:checked {
+  border: 1px solid #84caff;
+  box-shadow: 0px 0px 0px 0px;
+}
