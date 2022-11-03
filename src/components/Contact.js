@@ -5,8 +5,8 @@ function Contact() {
   const [name, setName] = useState("Zuribot");
 
   const handleSubmit = (event) => {
-      event.preventdefault();
-  }
+    event.preventdefault();
+  };
 
   return (
     <section className="form__wrapper">
@@ -15,7 +15,7 @@ function Contact() {
         Hi there, contact me to ask me about anything you have in mind.
       </p>
 
-      <form1 onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit}>
         <div>
           <label htmlFor="first_name">First Name</label>
           <input
@@ -24,7 +24,6 @@ function Contact() {
             name="first_name"
             id="first_name"
           />
-
         </div>
 
         <div>
