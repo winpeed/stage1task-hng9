@@ -1,3 +1,33 @@
+.avatar__wrapper {
+  position: relative;
+  cursor: pointer;
+
+  .span__design {
+    background: #344054bf;
+    width: 98%;
+    height: 98%;
+    border-radius: 50%;
+    z-index: 1;
+    top: -1%;
+    position: absolute;
+    left: 0;
+    cursor: pointer;
+  }
+  .camera {
+    position: absolute;
+    bottom: 17%;
+    left: 42%;
+    z-index: -2;
+  }
+  .show__camera {
+    z-index: 2;
+  }
+}
+
+.avatar__wrapper::before {
+  background-color: green;
+}
+
 #twitter {
   padding: 1em 0em;
 }

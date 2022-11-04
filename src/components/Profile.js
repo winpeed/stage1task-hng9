@@ -3,6 +3,15 @@ import React, { useState } from "react";
 
 function Profile() {
   const [slackName, setSlackName] = useState("PraiseObende");
+  const [isHover, setIsHover] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsHover(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHover(false);
+  };
   return (
     <>
       <div className="share__button">
@@ -12,18 +21,32 @@ function Profile() {
       <div className="share__button__two">
         <img src="Avatar share button_2.svg" alt="Share Button 2" />
       </div>
-      <img
-        src="profile.jpeg"
-        alt="Profile Pic"
-        id="profile__img"
-        width={128}
-        height={128}
-        style={{
-          borderRadius: "50%",
-          objectFit: "cover",
-          objectPosition: "30% 10%",
-        }}
-      />
+
+      <div className="avatar__wrapper">
+        <img
+          src="profile.jpeg"
+          alt="Profile Pic"
+          id="profile__img"
+          width={128}
+          height={128}
+          style={{
+            borderRadius: "50%",
+            objectFit: "cover",
+            objectPosition: "30% 10%",
+          }}
+          onMouseEnter={handleMouseEnter}
+        />
+        <span
+          className={isHover ? "span__design" : ""}
+          onMouseOut={handleMouseLeave}
+        ></span>
+        <img
+          src="camera.svg"
+          alt="Avatar Upload"
+          className={isHover ? "camera show__camera" : "camera"}
+        />
+      </div>
+
       <h1 id="twitter">PETERson OBIson</h1>
       <h2 id="slack">{slackName}</h2>
 
