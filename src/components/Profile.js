@@ -78,7 +78,7 @@ function Profile() {
         </a>
 
         <a href="/contact" id="contact" target="_blank" rel="noreferrer">
-          Contact
+          Contact Me
         </a>
       </div>
 
