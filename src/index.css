@@ -34,11 +34,14 @@ code {
   --bg--blue: #1570ef;
   --bg--focused--gray: linear-gradient(0deg, #eaecf0, #eaecf0),
     linear-gradient(0deg, #98a2b3, #98a2b3);
+  --text--red: #f83f23;
 }
 
 input::placeholder,
 textarea::placeholder,
-button {
+button,
+textarea,
+input {
   font-family: "Inter", sans-serif;
 }
 

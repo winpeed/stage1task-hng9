@@ -1,12 +1,46 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 function Contact() {
   // eslint-disable-next-line no-unused-vars
-  const [name, setName] = useState("Zuribot");
+  const [n_name, setN_Name] = useState("Zuribot");
+  const [isError, setIsError] = useState(false);
+  const [formData, setFormData] = useState({
+    first_name: "",
+    last_name: "",
+    email: "",
+    message: "",
+    isAgree: false,
+  });
+
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    console.log(name, value);
+    console.log(formData);
+    setFormData((prevData) => {
+      return {
+        ...prevData,
+        [name]: value,
+      };
+    });
+  };
 
   const handleSubmit = (event) => {
-    event.preventdefault();
+    event.preventDefault();
+    handleValidation();
   };
+
+  const handleValidation = () => {
+    if (
+      formData.first_name === "" ||
+      formData.last_name === "" ||
+      formData.email === "" ||
+      formData.message === ""
+    ) {
+      setIsError(true);
+    }
+  };
+
+  useEffect(() => {}, [isError]);
 
   return (
     <section className="form__wrapper">
@@ -23,7 +57,12 @@ function Contact() {
             placeholder="Enter your first name"
             name="first_name"
             id="first_name"
+            value={formData.first_name}
+            onChange={handleChange}
           />
+          {isError && formData.first_name === "" && (
+            <span className="error__text">Please enter your first name</span>
+          )}
         </div>
 
         <div>
@@ -33,7 +72,12 @@ function Contact() {
             placeholder="Enter your last name"
             name="last_name"
             id="last_name"
+            value={formData.last_name}
+            onChange={handleChange}
           />
+          {isError && formData.last_name === "" && (
+            <span className="error__text">Please enter your last name</span>
+          )}
         </div>
 
         <div>
@@ -43,7 +87,12 @@ function Contact() {
             placeholder="yourname@email.com"
             name="email"
             id="email"
+            value={formData.email}
+            onChange={handleChange}
           />
+          {isError && formData.email === "" && (
+            <span className="error__text">Please enter your email address</span>
+          )}
         </div>
 
         <div>
@@ -53,17 +102,38 @@ function Contact() {
             placeholder="Send me a message and I'll reply you as soon as possible..."
             name="message"
             id="message"
+            value={formData.message}
+            onChange={handleChange}
+            className={
+              isError && formData.message === "" ? "textarea__error" : ""
+            }
           ></textarea>
+          {isError && formData.message === "" && (
+            <span className="error__text">Please enter a message</span>
+          )}
         </div>
 
         <div id="box__isAgree">
           <label htmlFor="isAgree">
-            You agree to providing your data to {name} who may contact you.
+            You agree to providing your data to {n_name} who may contact you.
           </label>
-          <input type="checkbox" name="isAgree" id="isAgree" />
+          <input
+            type="checkbox"
+            name="isAgree"
+            id="isAgree"
+            checked={formData.isAgree}
+            onChange={() =>
+              setFormData((prevData) => {
+                return {
+                  ...prevData,
+                  isAgree: !prevData.isAgree,
+                };
+              })
+            }
+          />
         </div>
 
-        <button id="btn__submit"> Send Message</button>
+        <button id="btn__submit">Send Message</button>
       </form>
     </section>
   );
