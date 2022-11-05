@@ -14,8 +14,6 @@ function Contact() {
 
   const handleChange = (event) => {
     const { name, value } = event.target;
-    console.log(name, value);
-    console.log(formData);
     setFormData((prevData) => {
       return {
         ...prevData,
