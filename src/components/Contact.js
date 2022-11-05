@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 function Contact() {
   // eslint-disable-next-line no-unused-vars
-  const [n_name, setN_Name] = useState("Zuribot");
+  const [name, setName] = useState("Praise Obende");
   const [isError, setIsError] = useState(false);
   const [formData, setFormData] = useState({
     first_name: "",
@@ -59,6 +59,7 @@ function Contact() {
             id="first_name"
             value={formData.first_name}
             onChange={handleChange}
+            required
           />
           {isError && formData.first_name === "" && (
             <span className="error__text">Please enter your first name</span>
@@ -74,6 +75,7 @@ function Contact() {
             id="last_name"
             value={formData.last_name}
             onChange={handleChange}
+            required
           />
           {isError && formData.last_name === "" && (
             <span className="error__text">Please enter your last name</span>
@@ -89,6 +91,7 @@ function Contact() {
             id="email"
             value={formData.email}
             onChange={handleChange}
+            required
           />
           {isError && formData.email === "" && (
             <span className="error__text">Please enter your email address</span>
@@ -107,6 +110,7 @@ function Contact() {
             className={
               isError && formData.message === "" ? "textarea__error" : ""
             }
+            required
           ></textarea>
           {isError && formData.message === "" && (
             <span className="error__text">Please enter a message</span>
@@ -115,7 +119,7 @@ function Contact() {
 
         <div id="box__isAgree">
           <label htmlFor="isAgree">
-            You agree to providing your data to {n_name} who may contact you.
+            You agree to providing your data to {name} who may contact you.
           </label>
           <input
             type="checkbox"
