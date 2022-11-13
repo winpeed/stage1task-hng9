@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer() {
   return (
-    <footer>
+    <footer className="home__footer">
       <a href="https://internship.zuri.team/" target="_blank" rel="noreferrer">
         <span className="zuri__icon">
           <img src="Vector.svg" alt="Zuri Internship Logo" />

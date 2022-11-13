@@ -6,6 +6,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-size: 12px;
   box-sizing: content-box;
+  scroll-behavior: smooth;
 }
 
 h1,
@@ -35,6 +36,10 @@ code {
   --bg--focused--gray: linear-gradient(0deg, #eaecf0, #eaecf0),
     linear-gradient(0deg, #98a2b3, #98a2b3);
   --text--red: #f83f23;
+  --bg--purple: #a02279;
+  --bg--black: #1d1d1e;
+  --text--black: #434343;
+  --border--gray: #d7d7d7;
 }
 
 input::placeholder,

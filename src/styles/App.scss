@@ -89,7 +89,7 @@
   }
 }
 
-footer {
+.home__footer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -155,7 +155,7 @@ footer {
 @media (min-width: 701px) {
   .App {
     margin: 0 auto;
-    padding: 2em 0em;
+    padding: 2em 0em 0em 0em;
   }
 
   .btn__links {
@@ -164,7 +164,7 @@ footer {
     }
   }
 
-  footer {
+  .home__footer {
     flex-direction: row;
 
     .footer__text {
