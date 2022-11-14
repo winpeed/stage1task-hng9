@@ -1,6 +1,6 @@
 export const placesImages = [
   {
-    id: "1b",
+    id: "https://res.cloudinary.com/praiseobende/image/upload/v1668427113/1b_jzww4e.svg",
     name: "Desert king",
     price: "1MBT per night",
     distance: "2345km away",
@@ -8,7 +8,7 @@ export const placesImages = [
     type: "Restaurant",
   },
   {
-    id: "2b",
+    id: "https://res.cloudinary.com/praiseobende/image/upload/v1668427119/2b_ecp9p5.svg",
     name: "Desert king",
     price: "1MBT per night",
     distance: "2345km away",
@@ -16,7 +16,7 @@ export const placesImages = [
     type: "Cottage",
   },
   {
-    id: "3b",
+    id: "https://res.cloudinary.com/praiseobende/image/upload/v1668427114/3b_cshuir.svg",
     name: "Desert king",
     price: "1MBT per night",
     distance: "2345km away",
@@ -24,7 +24,7 @@ export const placesImages = [
     type: "Castle",
   },
   {
-    id: "4b",
+    id: "https://res.cloudinary.com/praiseobende/image/upload/v1668427121/4b_zjnacb.svg",
     name: "Desert king",
     price: "1MBT per night",
     distance: "2345km away",
@@ -32,7 +32,7 @@ export const placesImages = [
     type: "Fantast city",
   },
   {
-    id: "5b",
+    id: "https://res.cloudinary.com/praiseobende/image/upload/v1668427117/5b_dqimrd.svg",
     name: "Desert king",
     price: "1MBT per night",
     distance: "2345km away",
@@ -40,7 +40,7 @@ export const placesImages = [
     type: "beach",
   },
   {
-    id: "6b",
+    id: "https://res.cloudinary.com/praiseobende/image/upload/v1668427118/6b_jh2lpu.svg",
     name: "Desert king",
     price: "1MBT per night",
     distance: "2345km away",
@@ -48,7 +48,7 @@ export const placesImages = [
     type: "Carbins",
   },
   {
-    id: "7b",
+    id: "https://res.cloudinary.com/praiseobende/image/upload/v1668427149/7b_tbrfmm.svg",
     name: "Desert king",
     price: "1MBT per night",
     distance: "2345km away",
@@ -56,7 +56,7 @@ export const placesImages = [
     type: "Off-grid",
   },
   {
-    id: "8b",
+    id: "https://res.cloudinary.com/praiseobende/image/upload/v1668427130/8b_swm1qf.svg",
     name: "Desert king",
     price: "1MBT per night",
     distance: "2345km away",
@@ -64,7 +64,7 @@ export const placesImages = [
     type: "Farm",
   },
   {
-    id: "9b",
+    id: "https://res.cloudinary.com/praiseobende/image/upload/v1668427127/9b_jow4it.svg",
     name: "Desert king",
     price: "1MBT per night",
     distance: "2345km away",
@@ -72,7 +72,7 @@ export const placesImages = [
     type: "Restaurant",
   },
   {
-    id: "10b",
+    id: "https://res.cloudinary.com/praiseobende/image/upload/v1668427131/10b_tlfowe.svg",
     name: "Desert king",
     price: "1MBT per night",
     distance: "2345km away",
@@ -80,7 +80,7 @@ export const placesImages = [
     type: "Farm",
   },
   {
-    id: "11b",
+    id: "https://res.cloudinary.com/praiseobende/image/upload/v1668427128/11b_nzv7ry.svg",
     name: "Desert king",
     price: "1MBT per night",
     distance: "2345km away",
@@ -88,7 +88,7 @@ export const placesImages = [
     type: "Off-grid",
   },
   {
-    id: "12b",
+    id: "https://res.cloudinary.com/praiseobende/image/upload/v1668427132/12b_vv4n19.svg",
     name: "Desert king",
     price: "1MBT per night",
     distance: "2345km away",
@@ -96,7 +96,7 @@ export const placesImages = [
     type: "beach",
   },
   {
-    id: "13b",
+    id: "https://res.cloudinary.com/praiseobende/image/upload/v1668427140/13b_j0sdcw.svg",
     name: "Desert king",
     price: "1MBT per night",
     distance: "2345km away",
@@ -104,7 +104,7 @@ export const placesImages = [
     type: "Cottage",
   },
   {
-    id: "14b",
+    id: "https://res.cloudinary.com/praiseobende/image/upload/v1668427147/14b_omelrs.svg",
     name: "Desert king",
     price: "1MBT per night",
     distance: "2345km away",
@@ -112,7 +112,7 @@ export const placesImages = [
     type: "Restaurant",
   },
   {
-    id: "15b",
+    id: "https://res.cloudinary.com/praiseobende/image/upload/v1668427149/15b_jqlhvk.svg",
     name: "Desert king",
     price: "1MBT per night",
     distance: "2345km away",
@@ -120,7 +120,7 @@ export const placesImages = [
     type: "Carbins",
   },
   {
-    id: "16b",
+    id: "https://res.cloudinary.com/praiseobende/image/upload/v1668427146/16b_uwrhpp.svg",
     name: "Desert king",
     price: "1MBT per night",
     distance: "2345km away",

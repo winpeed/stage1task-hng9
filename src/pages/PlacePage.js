@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { placesImages } from "../utils/placesImages";
 import { filterTypes } from "../utils/filterTypes";
-
 import Footer from "../components/meta/Footer";
 import Header from "../components/meta/Header";
 
@@ -24,7 +23,7 @@ function PlacePage() {
 
             <li onClick={() => setFilterText("")}>
               <img
-                src="/location-icon.svg"
+                src="https://res.cloudinary.com/praiseobende/image/upload/v1668427392/location-icon_pe63ri.svg"
                 alt="Location Icon"
                 width={150}
                 loading="lazy"
@@ -39,7 +38,7 @@ function PlacePage() {
                 const { id, name, price, distance, duration } = item;
                 return (
                   <article key={id}>
-                    <img src={`/${id}.svg`} alt="First" loading="lazy" />
+                    <img src={`${id}`} alt={name} loading="lazy" />
                     <div className="top">
                       <span>{name}</span>
                       <span>{price}</span>
@@ -59,7 +58,7 @@ function PlacePage() {
                   const { id, name, price, distance, duration } = item;
                   return (
                     <article key={id}>
-                      <img src={`/${id}.svg`} alt={name} loading="lazy" />
+                      <img src={`${id}`} alt={name} loading="lazy" />
                       <div className="top">
                         <span>{name}</span>
                         <span>{price}</span>

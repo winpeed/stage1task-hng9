@@ -5,7 +5,10 @@ function Footer() {
     <footer className="meta__footer">
       <div className="wrapper">
         <div className="logo__column">
-          <img src="/logo-2.svg" alt="Logo 2" />
+          <img
+            src="https://res.cloudinary.com/praiseobende/image/upload/v1668426270/logo-2_kzmmxs.svg"
+            alt="Logo 2"
+          />
 
           <ul className="social__links">
             <li>

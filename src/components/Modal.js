@@ -7,7 +7,7 @@ function Modal({ onShow }) {
         <div className="top">
           <h2>Connect Wallet</h2>
           <img
-            src="/cancel.svg"
+            src="https://res.cloudinary.com/praiseobende/image/upload/v1668426077/cancel_ds2lwl.svg"
             alt="Cancel Icon"
             style={{ cursor: "pointer" }}
             onClick={onShow}
@@ -21,7 +21,11 @@ function Modal({ onShow }) {
 
           <article>
             <p>
-              <img src="/meta-img.svg" alt="Meta logo" loading="lazy" />
+              <img
+                src="https://res.cloudinary.com/praiseobende/image/upload/v1668426151/meta-img_sw1zlc.svg"
+                alt="Meta logo"
+                loading="lazy"
+              />
               <span> Metamask</span>
             </p>
             <img src="/forward-arrow.svg" alt="Forward arrow" />
@@ -30,7 +34,7 @@ function Modal({ onShow }) {
           <article>
             <p>
               <img
-                src="/wallet-connect.svg"
+                src="https://res.cloudinary.com/praiseobende/image/upload/v1668426191/wallet-connect_vsfwpx.svg"
                 alt="Connect Wallet logo"
                 loading="lazy"
               />

@@ -8,7 +8,12 @@ function Header() {
   return (
     <header className="meta__header">
       <div className="logo">
-        <img src="/logo-1.svg" alt="Logo 1" width={180} loading="lazy" />
+        <img
+          src="https://res.cloudinary.com/praiseobende/image/upload/v1668426227/logo-1_lui7b2.svg"
+          alt="Logo 1"
+          width={180}
+          loading="lazy"
+        />
       </div>
 
       <nav className="right">

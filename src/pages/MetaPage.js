@@ -27,14 +27,30 @@ function MetaPage() {
         </div>
 
         <div className="right">
-          <img src="/hero-img.svg" alt="Hero" loading="lazy" />
+          <img
+            src="https://res.cloudinary.com/praiseobende/image/upload/v1668426336/hero-img_oytycb.svg"
+            alt="Hero"
+            loading="lazy"
+          />
         </div>
       </section>
 
       <section className="meta__tokens">
-        <img src="/mb-token.svg" alt="MB token" loading="lazy" />
-        <img src="/metamask.svg" alt="Metamask" loading="lazy" />
-        <img src="/opensea.svg" alt="Opensea" loading="lazy" />
+        <img
+          src="https://res.cloudinary.com/praiseobende/image/upload/v1668426377/mb-token_xmh7mv.svg"
+          alt="MB token"
+          loading="lazy"
+        />
+        <img
+          src="https://res.cloudinary.com/praiseobende/image/upload/v1668426395/metamask_doqab9.svg"
+          alt="Metamask"
+          loading="lazy"
+        />
+        <img
+          src="https://res.cloudinary.com/praiseobende/image/upload/v1668426426/opensea_zxbbhl.svg"
+          alt="Opensea"
+          loading="lazy"
+        />
       </section>
 
       <section className="meta__inspiration">
@@ -44,7 +60,7 @@ function MetaPage() {
             const { id, name, price, distance, duration } = item;
             return (
               <article key={id}>
-                <img src={`/${id}.svg`} alt={name} loading="lazy" />
+                <img src={`${id}`} alt={name} loading="lazy" />
                 <div className="top">
                   <span>{name}</span>
                   <span>{price}</span>
