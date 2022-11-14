@@ -38,7 +38,7 @@ function PlacePage() {
                 const { id, name, price, distance, duration } = item;
                 return (
                   <article key={id}>
-                    <img src={`${id}.svg`} alt="First" />
+                    <img src={`/meta/${id}.svg`} alt="First" />
                     <div className="top">
                       <span>{name}</span>
                       <span>{price}</span>
@@ -48,7 +48,7 @@ function PlacePage() {
                       <span>{duration}</span>
                     </div>
 
-                    <img src="stars.svg" alt="Five Stars" />
+                    <img src="/meta/stars.svg" alt="Five Stars" />
                   </article>
                 );
               })
@@ -58,7 +58,7 @@ function PlacePage() {
                   const { id, name, price, distance, duration } = item;
                   return (
                     <article key={id}>
-                      <img src={`${id}.svg`} alt="First" />
+                      <img src={`/meta/${id}.svg`} alt={name} />
                       <div className="top">
                         <span>{name}</span>
                         <span>{price}</span>
@@ -68,7 +68,7 @@ function PlacePage() {
                         <span>{duration}</span>
                       </div>
 
-                      <img src="stars.svg" alt="Five Stars" />
+                      <img src="/meta/stars.svg" alt="Five Stars" />
                     </article>
                   );
                 })}
