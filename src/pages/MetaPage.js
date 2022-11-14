@@ -34,9 +34,9 @@ function MetaPage() {
       </section>
 
       <section className="meta__tokens">
-        <img src="/meta/mb-token.svg" alt="MB token" />
-        <img src="/meta/metamask.svg" alt="Metamask" />
-        <img src="/meta/opensea.svg" alt="Opensea" />
+        <img src="/mb-token.svg" alt="MB token" />
+        <img src="/metamask.svg" alt="Metamask" />
+        <img src="/opensea.svg" alt="Opensea" />
       </section>
 
       <section className="meta__inspiration">
