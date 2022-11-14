@@ -1,9 +1,10 @@
 import React, { useState } from "react";
+import Modal from "../Modal";
 import Navbar from "../Navbar";
 
 function Header() {
   const [isNavShow, setIsNavShow] = useState(false);
-  const [isShow, setIsShow] = useState(true);
+  const [isShow, setIsShow] = useState(false);
   return (
     <header className="meta__header">
       <div className="logo">
@@ -37,10 +38,13 @@ function Header() {
 
       {isNavShow && (
         <Navbar
-          onShow={() => setIsShow(!isShow)}
+          isShow={isShow}
           onNavShow={() => setIsNavShow(!isNavShow)}
+          onShow={() => setIsShow(!isShow)}
         />
       )}
+
+      {isShow && <Modal onShow={() => setIsShow(!isShow)} />}
     </header>
   );
 }

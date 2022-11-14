@@ -1,6 +1,7 @@
 import React from "react";
+import Modal from "./Modal";
 
-function Navbar({ onShow, onNavShow }) {
+function Navbar({ onShow, onNavShow, isShow }) {
   return (
     <section className="navbar__overlay" onClick={onNavShow}>
       <div className="navbar__modal">
@@ -36,6 +37,7 @@ function Navbar({ onShow, onNavShow }) {
 
         <hr />
       </div>
+      {isShow && <Modal />}
     </section>
   );
 }
