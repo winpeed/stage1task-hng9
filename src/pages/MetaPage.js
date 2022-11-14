@@ -29,7 +29,7 @@ function MetaPage() {
         </div>
 
         <div className="right">
-          <img src="/meta/hero-img.svg" alt="Hero" />
+          <img src="/hero-img.svg" alt="Hero" />
         </div>
       </section>
 
@@ -56,7 +56,7 @@ function MetaPage() {
                   <span>{duration}</span>
                 </div>
 
-                <img src="stars.svg" alt="Five Stars" />
+                <img src="/stars.svg" alt="Five Stars" />
               </article>
             );
           })}
@@ -78,13 +78,12 @@ function MetaPage() {
           </div>
 
           <div className="img__wrapper">
-            <img src="/meta/section-img.svg" alt="Info Section" style={{}} />
+            <img src="/section-img.svg" alt="Info Section" style={{}} />
           </div>
         </div>
       </section>
 
       <Footer />
-      {/* {isShow && <Modal onShow={() => setIsShow(!isShow)} />} */}
     </>
   );
 }
