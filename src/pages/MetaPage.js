@@ -44,7 +44,7 @@ function MetaPage() {
             const { id, name, price, distance, duration } = item;
             return (
               <article key={id}>
-                <img src={`${id}.svg`} alt={name} loading="lazy" />
+                <img src={`/${id}.svg`} alt={name} loading="lazy" />
                 <div className="top">
                   <span>{name}</span>
                   <span>{price}</span>
