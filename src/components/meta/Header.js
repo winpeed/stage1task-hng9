@@ -8,7 +8,7 @@ function Header() {
   return (
     <header className="meta__header">
       <div className="logo">
-        <img src="/logo-1.svg" alt="Logo 1" width={180} />
+        <img src="/logo-1.svg" alt="Logo 1" width={180} loading="lazy" />
       </div>
 
       <nav className="right">

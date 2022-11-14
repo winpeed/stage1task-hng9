@@ -23,7 +23,12 @@ function PlacePage() {
             })}
 
             <li onClick={() => setFilterText("")}>
-              <img src="/location-icon.svg" alt="Location Icon" width={150} />
+              <img
+                src="/location-icon.svg"
+                alt="Location Icon"
+                width={150}
+                loading="lazy"
+              />
             </li>
           </ul>
         </div>
@@ -34,7 +39,7 @@ function PlacePage() {
                 const { id, name, price, distance, duration } = item;
                 return (
                   <article key={id}>
-                    <img src={`/${id}.svg`} alt="First" />
+                    <img src={`/${id}.svg`} alt="First" loading="lazy" />
                     <div className="top">
                       <span>{name}</span>
                       <span>{price}</span>
@@ -44,7 +49,7 @@ function PlacePage() {
                       <span>{duration}</span>
                     </div>
 
-                    <img src="/stars.svg" alt="Five Stars" />
+                    <img src="/stars.svg" alt="Five Stars" loading="lazy" />
                   </article>
                 );
               })
@@ -54,7 +59,7 @@ function PlacePage() {
                   const { id, name, price, distance, duration } = item;
                   return (
                     <article key={id}>
-                      <img src={`/${id}.svg`} alt={name} />
+                      <img src={`/${id}.svg`} alt={name} loading="lazy" />
                       <div className="top">
                         <span>{name}</span>
                         <span>{price}</span>
@@ -64,7 +69,7 @@ function PlacePage() {
                         <span>{duration}</span>
                       </div>
 
-                      <img src="/stars.svg" alt="Five Stars" />
+                      <img src="/stars.svg" alt="Five Stars" loading="lazy" />
                     </article>
                   );
                 })}

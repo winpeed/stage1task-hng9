@@ -1,8 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import Footer from "../components/meta/Footer";
 import Header from "../components/meta/Header";
-import Modal from "../components/Modal";
-import Navbar from "../components/Navbar";
 import { homeImages } from "../utils/homeImages";
 
 function MetaPage() {
@@ -29,14 +27,14 @@ function MetaPage() {
         </div>
 
         <div className="right">
-          <img src="/hero-img.svg" alt="Hero" />
+          <img src="/hero-img.svg" alt="Hero" loading="lazy" />
         </div>
       </section>
 
       <section className="meta__tokens">
-        <img src="/mb-token.svg" alt="MB token" />
-        <img src="/metamask.svg" alt="Metamask" />
-        <img src="/opensea.svg" alt="Opensea" />
+        <img src="/mb-token.svg" alt="MB token" loading="lazy" />
+        <img src="/metamask.svg" alt="Metamask" loading="lazy" />
+        <img src="/opensea.svg" alt="Opensea" loading="lazy" />
       </section>
 
       <section className="meta__inspiration">
@@ -46,7 +44,7 @@ function MetaPage() {
             const { id, name, price, distance, duration } = item;
             return (
               <article key={id}>
-                <img src={`${id}.svg`} alt="First" />
+                <img src={`${id}.svg`} alt={name} loading="lazy" />
                 <div className="top">
                   <span>{name}</span>
                   <span>{price}</span>
@@ -56,7 +54,7 @@ function MetaPage() {
                   <span>{duration}</span>
                 </div>
 
-                <img src="/stars.svg" alt="Five Stars" />
+                <img src="/stars.svg" alt="Five Stars" loading="lazy" />
               </article>
             );
           })}
@@ -78,7 +76,7 @@ function MetaPage() {
           </div>
 
           <div className="img__wrapper">
-            <img src="/section-img.svg" alt="Info Section" style={{}} />
+            <img src="/section-img.svg" alt="Info Section" loading="lazy" />
           </div>
         </div>
       </section>

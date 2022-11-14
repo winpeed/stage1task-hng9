@@ -10,17 +10,17 @@ function Footer() {
           <ul className="social__links">
             <li>
               <a href="/">
-                <img src="/facebook.svg" alt="Facebook Logo" />
+                <img src="/facebook.svg" alt="Facebook Logo" loading="lazy" />
               </a>
             </li>
             <li>
               <a href="/">
-                <img src="/instagram.svg" alt="instagram Logo" />
+                <img src="/instagram.svg" alt="instagram Logo" loading="lazy" />
               </a>
             </li>
             <li>
               <a href="/">
-                <img src="/twitter.svg" alt="twitter Logo" />
+                <img src="/twitter.svg" alt="twitter Logo" loading="lazy" />
               </a>
             </li>
           </ul>

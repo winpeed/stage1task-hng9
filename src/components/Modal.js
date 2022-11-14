@@ -21,7 +21,7 @@ function Modal({ onShow }) {
 
           <article>
             <p>
-              <img src="/meta-img.svg" alt="Meta logo" />
+              <img src="/meta-img.svg" alt="Meta logo" loading="lazy" />
               <span> Metamask</span>
             </p>
             <img src="/forward-arrow.svg" alt="Forward arrow" />
@@ -29,7 +29,11 @@ function Modal({ onShow }) {
 
           <article>
             <p>
-              <img src="/wallet-connect.svg" alt="Connect Wallet logo" />
+              <img
+                src="/wallet-connect.svg"
+                alt="Connect Wallet logo"
+                loading="lazy"
+              />
               <span> Wallet Connect</span>
             </p>
             <img src="/forward-arrow.svg" alt="Forward arrow" />
