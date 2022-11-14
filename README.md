@@ -1,9 +1,11 @@
 # HNG9 internship Live Pages
+
 Three pages are available on this project from the HNG9 internship:
-Stage 1 Profile Design - https://stage1-task-hng9.vercel.app
-Stage 2 Contct Page - https://stage1-task-hng9.vercel.app/contact
-Stage 3 Meta BNB HomePage - https://stage1-task-hng9.vercel.app/meta
-Stage 3 Meta BNB Places- https://stage1-task-hng9.vercel.app/meta/places
+
+Stage 1 Profile Design -  [https://stage1-task-hng9.vercel.app](https://stage1-task-hng9.vercel.app) 
+Stage 2 Contact Page - [https://stage1-task-hng9.vercel.app/contact](https://stage1-task-hng9.vercel.app/contact) 
+Stage 3 Meta BNB HomePage - [https://stage1-task-hng9.vercel.app/meta](https://stage1-task-hng9.vercel.app/meta)  
+Stage 3 Meta BNB Places- [https://stage1-task-hng9.vercel.app/meta/places](https://stage1-task-hng9.vercel.app/meta/places)
 
 ## Available Scripts
 
