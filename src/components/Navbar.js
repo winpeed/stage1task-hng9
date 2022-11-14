@@ -8,7 +8,7 @@ function Navbar({ onShow, onNavShow, isShow }) {
         <div className="top">
           <h2>Menu</h2>
           <img
-            src="/meta/cancel.svg"
+            src="/cancel.svg"
             alt="Cancel Icon"
             style={{ cursor: "pointer" }}
             onClick={onNavShow}

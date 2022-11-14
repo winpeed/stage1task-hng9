@@ -5,28 +5,28 @@ function Footer() {
     <footer className="meta__footer">
       <div className="wrapper">
         <div className="logo__column">
-          <img src="/meta/logo-2.svg" alt="Logo 2" />
+          <img src="/logo-2.svg" alt="Logo 2" />
 
           <ul className="social__links">
             <li>
               <a href="/">
-                <img src="/meta/facebook.svg" alt="Facebook Logo" />
+                <img src="/facebook.svg" alt="Facebook Logo" />
               </a>
             </li>
             <li>
               <a href="/">
-                <img src="/meta/instagram.svg" alt="instagram Logo" />
+                <img src="/instagram.svg" alt="instagram Logo" />
               </a>
             </li>
             <li>
               <a href="/">
-                <img src="/meta/twitter.svg" alt="twitter Logo" />
+                <img src="/twitter.svg" alt="twitter Logo" />
               </a>
             </li>
           </ul>
 
           <span className="copyright">
-            <img src="/meta/copyright.svg" alt="copyright Logo" />
+            <img src="/copyright.svg" alt="copyright Logo" />
             2022 Metabnb
           </span>
         </div>

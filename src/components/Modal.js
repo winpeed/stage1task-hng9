@@ -7,7 +7,7 @@ function Modal({ onShow }) {
         <div className="top">
           <h2>Connect Wallet</h2>
           <img
-            src="/meta/cancel.svg"
+            src="/cancel.svg"
             alt="Cancel Icon"
             style={{ cursor: "pointer" }}
             onClick={onShow}
@@ -21,18 +21,18 @@ function Modal({ onShow }) {
 
           <article>
             <p>
-              <img src="/meta/meta-img.svg" alt="Meta logo" />
+              <img src="/meta-img.svg" alt="Meta logo" />
               <span> Metamask</span>
             </p>
-            <img src="/meta/forward-arrow.svg" alt="Forward arrow" />
+            <img src="/forward-arrow.svg" alt="Forward arrow" />
           </article>
 
           <article>
             <p>
-              <img src="/meta/wallet-connect.svg" alt="Connect Wallet logo" />
+              <img src="/wallet-connect.svg" alt="Connect Wallet logo" />
               <span> Wallet Connect</span>
             </p>
-            <img src="/meta/forward-arrow.svg" alt="Forward arrow" />
+            <img src="/forward-arrow.svg" alt="Forward arrow" />
           </article>
         </div>
       </div>
